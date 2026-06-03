@@ -1,0 +1,14 @@
+name: sys-controll
+manifest_version: 1
+version: "1.2.2"
+description: >
+  Bridge external channels (Telegram, etc.) to an active Hermes TUI session with
+  dual consent (/sys-controll on|off|status).
+author: SkyLaTry
+kind: standalone
+provides_hooks:
+  - on_session_finalize
+  - on_session_reset
+provides_tools:
+  - sys_controll_send_cli
+  - sys_controll_send_channel
